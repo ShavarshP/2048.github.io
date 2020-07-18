@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #1b1c20;
+}
+
+.box {
+  height: 80px;
+  width: 80px;
+  border: 6px solid #101118;
+  font-size: 2em;
+  transition: all ease 0.1s;
+}
+
+.strinOfBox {
+  display: flex;
+  background-color: #fdfdfd;
+}
+
+#gameBox {
+  position: absolute;
+  bottom: 0px;
+}
+
+#game2048 {
+  top: 70%;
+  position: absolute;
+  left: 35%;
+}
+
+#text:hover {
+  top: 25%;
+  left: 18%;
+  font-size: 260%;
+}
