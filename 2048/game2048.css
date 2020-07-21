@@ -5,9 +5,14 @@
 body {
   background-color: #1b1c20;
 }
-
+#hashiv{
+  margin-left: 10%;
+  color: #fdfdfd;
+}
 .box {
+
   height: 80px;
+
   width: 80px;
   border: 6px solid #101118;
   font-size: 2em;
