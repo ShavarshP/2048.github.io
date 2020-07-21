@@ -16,30 +16,41 @@ function nshanaku() {
     boxN[i].innerHTML = box[i]
     if (box[i]==0) {
       boxN[i].style.color = "white"
+      boxN[i].style.backgroundColor  = "white"
     }
     if (box[i]!=0) {
-      boxN[i].style.color = "#31334d"
+      boxN[i].style.backgroundColor  = "#31334d"
+    }
+
+    if (box[i]==2048) {
+      boxN[i].style.backgroundColor  = "#f35912"
     }
     if (box[i]==1024) {
-      boxN[i].style.color = "#752424"
+      boxN[i].style.backgroundColor  = "#752424"
     }
     if (box[i]==512) {
-      boxN[i].style.color = "#ad0e0e"
+      boxN[i].style.backgroundColor  = "#ad0e0e"
     }
     if (box[i]==256) {
-      boxN[i].style.color = "#530707"
+      boxN[i].style.backgroundColor  = "#530707"
     }
     if (box[i]==128) {
-      boxN[i].style.color = "#646848"
+      boxN[i].style.backgroundColor  = "#646848"
     }
     if (box[i]==64) {
-      boxN[i].style.color = "#909668"
+      boxN[i].style.backgroundColor  = "#909668"
     }
     if (box[i]==32) {
-      boxN[i].style.color = "#3e6347"
+      boxN[i].style.backgroundColor  = "#3e6347"
     }
     if (box[i]==16) {
-      boxN[i].style.color = "#597961"
+      boxN[i].style.backgroundColor  = "#597961"
+    }
+    if (box[i]==8) {
+      boxN[i].style.backgroundColor  = "#719361"
+    }
+    if (box[i]==4) {
+      boxN[i].style.backgroundColor  = "#646b61"
     }
 
   }
@@ -314,8 +325,8 @@ function blockTypeMovie(e) {
     daxmove()
     for (var i = 0; i < 16; i++) {
       if(box2[i]!=box[i]){
+        setTimeout(function(){ randomNambe(random(1, 3)) }, 0);
 
-        randomNambe(random(1, 3))
         return
       }
     }
@@ -327,7 +338,7 @@ function blockTypeMovie(e) {
     for (var i = 0; i < 16; i++) {
       if(box2[i]!=box[i]){
 
-        randomNambe(random(1, 3))
+        setTimeout(function(){ randomNambe(random(1, 3)) }, 0);
         return
       }
     }
@@ -337,7 +348,7 @@ function blockTypeMovie(e) {
     for (var i = 0; i < 16; i++) {
       if(box2[i]!=box[i]){
 
-        randomNambe(random(1, 3))
+        setTimeout(function(){ randomNambe(random(1, 3)) }, 0);
         return
       }
     }
@@ -348,7 +359,7 @@ function blockTypeMovie(e) {
     for (var i = 0; i < 16; i++) {
       if(box2[i]!=box[i]){
 
-        randomNambe(random(1, 3))
+        setTimeout(function(){ randomNambe(random(1, 3)) }, 0);
         return
       }
     }
