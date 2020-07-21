@@ -9,8 +9,8 @@ for (var i = 0; i < boxN.length; i++) {
   box[i] = 0
 
 }
-
 function nshanaku() {
+  let hh=0
   for (var i = 0; i < boxN.length; i++) {
 
     boxN[i].innerHTML = box[i]
@@ -54,8 +54,13 @@ function nshanaku() {
     }
 
   }
+  let hashiv =box.map((f)=>{
+    hh+=f
+  })
+  document.getElementById('hashiv').innerHTML=hh
 
 }
+
 
 
 
